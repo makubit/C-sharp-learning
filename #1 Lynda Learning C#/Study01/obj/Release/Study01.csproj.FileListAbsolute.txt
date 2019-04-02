@@ -1,6 +1,0 @@
-C:\Users\mkt9\source\repos\Study01\Study01\bin\Release\Study01.exe.config
-C:\Users\mkt9\source\repos\Study01\Study01\bin\Release\Study01.exe
-C:\Users\mkt9\source\repos\Study01\Study01\bin\Release\Study01.pdb
-C:\Users\mkt9\source\repos\Study01\Study01\obj\Release\Study01.csproj.CoreCompileInputs.cache
-C:\Users\mkt9\source\repos\Study01\Study01\obj\Release\Study01.exe
-C:\Users\mkt9\source\repos\Study01\Study01\obj\Release\Study01.pdb
