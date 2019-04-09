@@ -13,5 +13,19 @@ namespace Util
             System.Console.Write(question);
             return System.Console.ReadLine();
         }
+
+        public static int AskInt(string question)
+        {
+            try
+            {
+                System.Console.Write(question);
+                return int.Parse(System.Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                throw new FormatException("Custom Format Exception");
+            }
+
+        }
     }
 }
