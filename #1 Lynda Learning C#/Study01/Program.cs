@@ -19,6 +19,9 @@ namespace Study01
         static List<Student> Students = new List<Student>();
         static void Main(string[] args)
         {
+            PayRoll p = new PayRoll();
+            p.PayAll();
+
             var adding = true;
 
             while (adding)
@@ -86,7 +89,7 @@ namespace Study01
         }
     }
 
-    class Member
+    public class Member
     {
         public string Name;
         public string Address;
@@ -120,10 +123,5 @@ namespace Study01
             this.Address = address;
             this.Phone = phone;
         }
-    }
-
-    class Teacher : Member
-    {
-        public string Subject;
     }
 }
