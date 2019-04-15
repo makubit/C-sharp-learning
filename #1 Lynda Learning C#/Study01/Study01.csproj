@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Console.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="PayRoll.cs" />
     <Compile Include="Principal.cs" />
     <Compile Include="Program.cs" />
