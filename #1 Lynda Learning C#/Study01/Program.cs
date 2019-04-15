@@ -19,6 +19,7 @@ namespace Study01
         static List<Student> Students = new List<Student>();
         static void Main(string[] args)
         {
+            Logger.Log("Tracker started", priority: 0);
             PayRoll p = new PayRoll();
             p.PayAll();
 
@@ -28,6 +29,8 @@ namespace Study01
             {
                 try
                 {
+                    Logger.Log("Adding new Student");
+
                     var newStudent = new Student();
 
                     newStudent.Name = Util.Console.Ask("Student name: ");
@@ -93,7 +96,15 @@ namespace Study01
         static void ShowGrade(string name)
         {
             var found = Students.Find(student => student.Name == name);
-            Console.WriteLine("{0}'s Grade: {1}", found.Name, found.Grade);
+
+            try
+            {
+                Console.WriteLine("{0}'s Grade: {1}", found.Name, found.Grade);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Student with this name does not exist.");
+            }
         }
     }
 

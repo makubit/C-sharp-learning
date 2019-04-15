@@ -15,6 +15,8 @@ namespace Study01
             payees.Add(new Teacher());
             payees.Add(new Teacher());
             payees.Add(new Principal());
+            Logger.Log("Payroll started started", "Payroll");
+
         }
         public void PayAll()
         {
@@ -22,6 +24,8 @@ namespace Study01
             {
                 payee.Pay();
             }
+
+            Logger.Log("PayAll Completed", "PayRoll", 2);
         }
     }
 }
