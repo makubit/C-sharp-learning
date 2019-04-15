@@ -55,6 +55,8 @@ namespace Study01
                 }
             }
 
+            ShowGrade("Tom");
+
             foreach (var student in Students)
                 Console.WriteLine("Name: {0}, Grade: {1}", student.Name, student.Grade);
 
@@ -87,28 +89,28 @@ namespace Study01
                 }
             }
         }
+
+        static void ShowGrade(string name)
+        {
+            var found = Students.Find(student => student.Name == name);
+            Console.WriteLine("{0}'s Grade: {1}", found.Name, found.Grade);
+        }
     }
 
     public class Member
     {
-        public string Name;
-        public string Address;
-        protected int phone;
-
-        public int Phone
-        {
-            set => phone = value;
-            get => phone;
-        }
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public int Phone { get; set; }
     }
 
     class Student : Member
     {
-        public static int Count = 0;
+        public static int Count { get; set; } = 0;
 
-        public int Grade;
-        public string Birthday;
-        public School School;
+        public int Grade { get; set; }
+        public string Birthday { get; set; }
+        public School School { get; set; }
 
         public Student()
         {
